@@ -5,7 +5,9 @@ export const App = () => {
   const [count, setCount] = useState(0);
 
   const addOne = () => {
-    setCount(prevCount => prevCount + 1);
+    setTimeout(() => {
+      setCount(prevCount => prevCount + 1);
+    }, 0);
   };
 
   const add100 = () => {
